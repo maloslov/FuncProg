@@ -1,0 +1,98 @@
+<scoverage 
+statement-count="8" statements-invoked="8" statement-rate="100.00" branch-rate="100.00" version="1.0" timestamp="1592268515405">
+    <packages>
+        <package name="l4" statement-count="8" statements-invoked="8" statement-rate="100.00">
+            <classes>
+                <class 
+                name="l4.Typeclasses.ReversableString" filename="l4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l4/ReversableString/reverse" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l4" class="ReversableString" class-type="Object" full-class-name="l4.Typeclasses.ReversableString" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab4\src\main\scala\l4\Typeclasses.scala" method="reverse" start="462" end="471" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="l4.Typeclasses.SmashString" filename="l4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l4/SmashString/smash" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l4" class="SmashString" class-type="Object" full-class-name="l4.Typeclasses.SmashString" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab4\src\main\scala\l4\Typeclasses.scala" method="smash" start="1482" end="1493" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="l4.Typeclasses" filename="l4\Typeclasses.scala" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l4/Typeclasses/testReversableString" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l4" class="Typeclasses" class-type="Object" full-class-name="l4.Typeclasses" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab4\src\main\scala\l4\Typeclasses.scala" method="testReversableString" start="283" end="312" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l4/Typeclasses/testSmashString" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l4" class="Typeclasses" class-type="Object" full-class-name="l4.Typeclasses" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab4\src\main\scala\l4\Typeclasses.scala" method="testSmashString" start="1606" end="1628" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l4/Typeclasses/testSmashInt" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l4" class="Typeclasses" class-type="Object" full-class-name="l4.Typeclasses" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab4\src\main\scala\l4\Typeclasses.scala" method="testSmashInt" start="1094" end="1113" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l4/Typeclasses/testSmashDouble" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l4" class="Typeclasses" class-type="Object" full-class-name="l4.Typeclasses" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab4\src\main\scala\l4\Typeclasses.scala" method="testSmashDouble" start="1222" end="1244" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="l4.Typeclasses.SmashInt" filename="l4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l4/SmashInt/smash" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l4" class="SmashInt" class-type="Object" full-class-name="l4.Typeclasses.SmashInt" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab4\src\main\scala\l4\Typeclasses.scala" method="smash" start="878" end="883" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="l4.Typeclasses.SmashDouble" filename="l4\Typeclasses.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l4/SmashDouble/smash" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l4" class="SmashDouble" class-type="Object" full-class-name="l4.Typeclasses.SmashDouble" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab4\src\main\scala\l4\Typeclasses.scala" method="smash" start="988" end="993" line="28" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>

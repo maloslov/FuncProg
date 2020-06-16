@@ -1,0 +1,718 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          l1\Classes.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package l1
+</span>2 <span style=''>
+</span>3 <span style=''>sealed trait Animal {
+</span>4 <span style=''>  val name: String
+</span>5 <span style=''>  val food: Food
+</span>6 <span style=''>  def eats(ifood: Food): Boolean = { </span><span style='background: #AEF1AE'>food.equals(ifood)</span><span style=''> }
+</span>7 <span style=''>}
+</span>8 <span style=''>
+</span>9 <span style=''>case class Mammals(name: String, food: Food) extends Animal
+</span>10 <span style=''>case class Birds(name: String, food: Food) extends Animal
+</span>11 <span style=''>case class Fishes(name: String, food: Food) extends Animal
+</span>12 <span style=''>
+</span>13 <span style=''>object Animal {
+</span>14 <span style=''>  val animal1 = </span><span style='background: #AEF1AE'>Mammals(&quot;cat&quot;, Meat)</span><span style=''>
+</span>15 <span style=''>  val animal2 = </span><span style='background: #AEF1AE'>Birds(&quot;parrot&quot;, Vegetables)</span><span style=''>
+</span>16 <span style=''>  val animal3 = </span><span style='background: #AEF1AE'>Fishes(&quot;goldfish&quot;, Plants)</span><span style=''>
+</span>17 <span style=''>  def knownAnimal(iname: String): Boolean = { </span><span style='background: #AEF1AE'>iname==animal1.name||iname==animal2.name||iname==animal3.name</span><span style=''> }
+</span>18 <span style=''>  def applyName(iname: String): Option[Animal] = iname match{
+</span>19 <span style=''>    case animal1.name =&gt; </span><span style='background: #AEF1AE'>Some(animal1)</span><span style=''>
+</span>20 <span style=''>    case animal2.name =&gt; </span><span style='background: #AEF1AE'>Some(animal2)</span><span style=''>
+</span>21 <span style=''>    case animal3.name =&gt; </span><span style='background: #AEF1AE'>Some(animal3)</span><span style=''>
+</span>22 <span style=''>    case _ =&gt; </span><span style='background: #AEF1AE'>None</span><span style=''>
+</span>23 <span style=''>  }
+</span>24 <span style=''>}
+</span>25 <span style=''>
+</span>26 <span style=''>sealed trait Food
+</span>27 <span style=''>case object Meat extends Food
+</span>28 <span style=''>case object Vegetables extends Food
+</span>29 <span style=''>case object Plants extends Food
+</span>30 <span style=''>
+</span>31 <span style=''>object Food {
+</span>32 <span style=''>  def apply(ifood: String): Option[Food] = {
+</span>33 <span style=''>    if(</span><span style='background: #AEF1AE'>ifood==&quot;meat&quot;</span><span style=''>) </span><span style='background: #AEF1AE'>Some(Meat)</span><span style=''>
+</span>34 <span style=''>    else </span><span style='background: #AEF1AE'>if(ifood==&quot;vegetables&quot;) Some(Vegetables)
+</span>35 <span style=''></span><span style='background: #AEF1AE'>    else if(ifood==&quot;plants&quot;) Some(Plants)
+</span>36 <span style=''></span><span style='background: #AEF1AE'>    else None</span><span style=''>
+</span>37 <span style=''>  }
+</span>38 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          6
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          107
+          -
+          125
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Object.equals
+        </td>
+        <td style="background: #AEF1AE">
+          Animal.this.food.equals(ifood)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          341
+          -
+          361
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          l1.Mammals.apply
+        </td>
+        <td style="background: #AEF1AE">
+          Mammals.apply(&quot;cat&quot;, Meat)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          378
+          -
+          405
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          l1.Birds.apply
+        </td>
+        <td style="background: #AEF1AE">
+          Birds.apply(&quot;parrot&quot;, Vegetables)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          422
+          -
+          448
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          l1.Fishes.apply
+        </td>
+        <td style="background: #AEF1AE">
+          Fishes.apply(&quot;goldfish&quot;, Plants)
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          544
+          -
+          556
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          l1.Fishes.name
+        </td>
+        <td style="background: #AEF1AE">
+          Animal.this.animal3.name
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          502
+          -
+          514
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          l1.Mammals.name
+        </td>
+        <td style="background: #AEF1AE">
+          Animal.this.animal1.name
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          516
+          -
+          535
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Object.==
+        </td>
+        <td style="background: #AEF1AE">
+          iname.==(Animal.this.animal2.name)
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          495
+          -
+          556
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Boolean.||
+        </td>
+        <td style="background: #AEF1AE">
+          iname.==(Animal.this.animal1.name).||(iname.==(Animal.this.animal2.name)).||(iname.==(Animal.this.animal3.name))
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          537
+          -
+          556
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Object.==
+        </td>
+        <td style="background: #AEF1AE">
+          iname.==(Animal.this.animal3.name)
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          523
+          -
+          535
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          l1.Birds.name
+        </td>
+        <td style="background: #AEF1AE">
+          Animal.this.animal2.name
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          651
+          -
+          658
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          l1.Animal.animal1
+        </td>
+        <td style="background: #AEF1AE">
+          Animal.this.animal1
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          646
+          -
+          659
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Mammals](Animal.this.animal1)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          685
+          -
+          698
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Birds](Animal.this.animal2)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          690
+          -
+          697
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          l1.Animal.animal2
+        </td>
+        <td style="background: #AEF1AE">
+          Animal.this.animal2
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          16
+        </td>
+        <td>
+          724
+          -
+          737
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Fishes](Animal.this.animal3)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          15
+        </td>
+        <td>
+          729
+          -
+          736
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          l1.Animal.animal3
+        </td>
+        <td style="background: #AEF1AE">
+          Animal.this.animal3
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          752
+          -
+          756
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #AEF1AE">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          962
+          -
+          972
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Meat.type](Meat)
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          19
+        </td>
+        <td>
+          962
+          -
+          972
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Meat.type](Meat)
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          947
+          -
+          960
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Object.==
+        </td>
+        <td style="background: #AEF1AE">
+          ifood.==(&quot;meat&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          1006
+          -
+          1022
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Vegetables.type](Vegetables)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          22
+        </td>
+        <td>
+          1006
+          -
+          1022
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Vegetables.type](Vegetables)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          985
+          -
+          1004
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Object.==
+        </td>
+        <td style="background: #AEF1AE">
+          ifood.==(&quot;vegetables&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          982
+          -
+          1078
+        </td>
+        <td>
+          If
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          if (ifood.==(&quot;vegetables&quot;))
+  scala.Some.apply[l1.Vegetables.type](Vegetables)
+else
+  if (ifood.==(&quot;plants&quot;))
+    scala.Some.apply[l1.Plants.type](Plants)
+  else
+    scala.None
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          1052
+          -
+          1064
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Plants.type](Plants)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          1032
+          -
+          1078
+        </td>
+        <td>
+          If
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          if (ifood.==(&quot;plants&quot;))
+  scala.Some.apply[l1.Plants.type](Plants)
+else
+  scala.None
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          1052
+          -
+          1064
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[l1.Plants.type](Plants)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          1035
+          -
+          1050
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Object.==
+        </td>
+        <td style="background: #AEF1AE">
+          ifood.==(&quot;plants&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          1074
+          -
+          1078
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #AEF1AE">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          1074
+          -
+          1078
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #AEF1AE">
+          scala.None
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

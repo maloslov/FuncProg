@@ -1,0 +1,324 @@
+<scoverage 
+statement-count="64" statements-invoked="64" statement-rate="100.00" branch-rate="100.00" version="1.0" timestamp="1592268516932">
+    <packages>
+        <package name="l3" statement-count="64" statements-invoked="64" statement-rate="100.00">
+            <classes>
+                <class 
+                name="l3.Sequence" filename="l3\Sequence.scala" statement-count="10" statements-invoked="10" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l3/Sequence/testForAll" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testForAll" start="836" end="852" line="28" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Sequence/testZip" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testZip" start="678" end="686" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Sequence/testFlatMap" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testFlatMap" start="1119" end="1152" line="39" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testFlatMap" start="1132" end="1140" line="39" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testFlatMap" start="1142" end="1151" line="39" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testFlatMap" start="1147" end="1151" line="39" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Sequence/testLastElement" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testLastElement" start="456" end="464" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testLastElement" start="451" end="465" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Sequence/testPalindrom" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testPalindrom" start="965" end="983" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Sequence" class-type="Object" full-class-name="l3.Sequence" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Sequence.scala" method="testPalindrom" start="972" end="983" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="l3.Adts" filename="l3\Adts.scala" statement-count="26" statements-invoked="26" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l3/Adts/testGoodOldJava" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="testGoodOldJava" start="1773" end="1796" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Adts/goodOldJava" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="goodOldJava" start="1610" end="1626" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="goodOldJava" start="1614" end="1625" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method name="l3/Adts/isEven" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="isEven" start="869" end="877" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="isEven" start="840" end="845" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="isEven" start="893" end="910" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+                        </method>
+                        <method 
+                        name="l3/Adts/testGetNth" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="testGetNth" start="326" end="344" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Adts/multiply" statement-count="8" statements-invoked="8" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="multiply" start="477" end="492" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="multiply" start="503" end="507" line="17" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="multiply" start="482" end="483" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="multiply" start="464" end="475" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="multiply" start="482" end="491" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="multiply" start="503" end="507" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="multiply" start="477" end="492" line="16" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="multiply" start="486" end="491" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Adts/safeDivide" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="safeDivide" start="1252" end="1256" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="safeDivide" start="1309" end="1312" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="safeDivide" start="1303" end="1313" line="33" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="safeDivide" start="1258" end="1292" line="32" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="safeDivide" start="1258" end="1292" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="safeDivide" start="1303" end="1313" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Adts/testIsEven" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="testIsEven" start="1033" end="1042" line="28" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Adts/testDouble" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="testDouble" start="630" end="641" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Adts/testSafeDivide" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="testSafeDivide" start="1448" end="1463" line="36" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method name="l3/Adts/getNth" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="getNth" start="181" end="194" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Adts" class-type="Object" full-class-name="l3.Adts" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Adts.scala" method="getNth" start="186" end="193" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+                        </method>
+                    </methods>
+</class>
+                <class 
+                name="l3.Strings" filename="l3\Strings.scala" statement-count="5" statements-invoked="5" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l3/Strings/testUppercase" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Strings" class-type="Object" full-class-name="l3.Strings" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Strings.scala" method="testUppercase" start="330" end="345" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Strings/testTakeTwo" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Strings" class-type="Object" full-class-name="l3.Strings" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Strings.scala" method="testTakeTwo" start="1215" end="1233" line="41" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Strings" class-type="Object" full-class-name="l3.Strings" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Strings.scala" method="testTakeTwo" start="1163" end="1173" line="39" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Strings/testComputation" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Strings" class-type="Object" full-class-name="l3.Strings" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Strings.scala" method="testComputation" start="896" end="1009" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Strings" class-type="Object" full-class-name="l3.Strings" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Strings.scala" method="testComputation" start="896" end="955" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="l3.Maps" filename="l3\Maps.scala" statement-count="23" statements-invoked="23" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="l3/Maps/testNumberFrodos" statement-count="7" statements-invoked="7" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testNumberFrodos" start="834" end="834" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testNumberFrodos" start="837" end="867" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testNumberFrodos" start="869" end="873" line="20" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testNumberFrodos" start="810" end="874" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testNumberFrodos" start="802" end="803" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testNumberFrodos" start="869" end="873" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testNumberFrodos" start="834" end="834" line="20" branch="true" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Maps/testGroupUsers" statement-count="10" statements-invoked="10" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="446" end="453" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="422" end="469" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="423" end="427" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="448" end="453" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="429" end="468" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="381" end="402" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="395" end="401" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="408" end="470" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="443" end="444" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testGroupUsers" start="457" end="468" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="l3/Maps/testUnderaged" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testUnderaged" start="1174" end="1191" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testUnderaged" start="1171" end="1171" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testUnderaged" start="1193" end="1209" line="29" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testUnderaged" start="1147" end="1210" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testUnderaged" start="1199" end="1209" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="l3" class="Maps" class-type="Object" full-class-name="l3.Maps" source="C:\Users\Maloslov\Desktop\PREDMETY\FP\Kursach\TestKurs\lab3\src\main\scala\l3\Maps.scala" method="testUnderaged" start="1171" end="1171" line="29" branch="true" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>

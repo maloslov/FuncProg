@@ -1,0 +1,212 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          l2\Compositions.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package l2
+</span>2 <span style=''>/*
+</span>3 <span style=''>sealed trait Option[A] {
+</span>4 <span style=''>
+</span>5 <span style=''>  def map[B](f: A =&gt; B): Option[B]
+</span>6 <span style=''>  def flatMap[B](f: A =&gt; Option[B]): Option[B]
+</span>7 <span style=''>}
+</span>8 <span style=''>case class Some[A](a: A) extends Option[A] {
+</span>9 <span style=''>
+</span>10 <span style=''>  def map[B](f: A =&gt; B): Option[B] = Some(f(a))
+</span>11 <span style=''>  def flatMap[B](f: A =&gt; Option[B]): Option[B] = f(a)
+</span>12 <span style=''>}
+</span>13 <span style=''>case class None[A]()     extends Option[A] {
+</span>14 <span style=''>
+</span>15 <span style=''>  def map[B](f: A =&gt; B): Option[B] = None()
+</span>16 <span style=''>  def flatMap[B](f: A =&gt; Option[B]): Option[B] = None()
+</span>17 <span style=''>}
+</span>18 <span style=''>*/
+</span>19 <span style=''>object Compositions {
+</span>20 <span style=''>
+</span>21 <span style=''>  // a) Используйте данные функции. Вы можете реализовать свое решение прямо в тестовой функции.
+</span>22 <span style=''>  // Нельзя менять сигнатуры
+</span>23 <span style=''>  def testCompose[A, B, C, D](f: A =&gt; B)
+</span>24 <span style=''>                             (g: B =&gt; C)
+</span>25 <span style=''>                             (h: C =&gt; D): A =&gt; D = </span><span style='background: #AEF1AE'>h.compose(g).compose(f)</span><span style=''>
+</span>26 <span style=''>
+</span>27 <span style=''>  // b) Напишите функции с использованием `map` и `flatMap`. Вы можете реализовать свое решение прямо в тестовой функции.
+</span>28 <span style=''>  // Нельзя менять сигнатуры
+</span>29 <span style=''>  def testMapFlatMap[A, B, C, D](f: A =&gt; Option[B])
+</span>30 <span style=''>                                (g: B =&gt; Option[C])
+</span>31 <span style=''>                                (h: C =&gt; D): Option[A] =&gt; Option[D] = {
+</span>32 <span style=''>    </span><span style='background: #AEF1AE'>_.flatMap(f).flatMap(g).map(h)</span><span style=''>
+</span>33 <span style=''>  }
+</span>34 <span style=''>
+</span>35 <span style=''>  // c) Напишите функцию используя for. Вы можете реализовать свое решение прямо в тестовой функции.
+</span>36 <span style=''>  // Нельзя менять сигнатуры
+</span>37 <span style=''>  def testForComprehension[A, B, C, D](f: A =&gt; Option[B])
+</span>38 <span style=''>                                      (g: B =&gt; Option[C])
+</span>39 <span style=''>                                      (h: C =&gt; D): Option[A] =&gt; Option[D] =
+</span>40 <span style=''>    </span><span style='background: #AEF1AE'>for {
+</span>41 <span style=''></span><span style='background: #AEF1AE'>      a &lt;- _
+</span>42 <span style=''></span><span style='background: #AEF1AE'>      b &lt;- f(a)
+</span>43 <span style=''></span><span style='background: #AEF1AE'>      c &lt;- g(b)
+</span>44 <span style=''></span><span style='background: #AEF1AE'>    } yield h(c)</span><span style=''>
+</span>45 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          707
+          -
+          730
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function1.compose
+        </td>
+        <td style="background: #AEF1AE">
+          h.compose[B](g).compose[A](f)
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          1063
+          -
+          1093
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.map
+        </td>
+        <td style="background: #AEF1AE">
+          x$1.flatMap[B](f).flatMap[C](g).map[D](h)
+        </td>
+      </tr><tr>
+        <td>
+          41
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          1425
+          -
+          1492
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.flatMap
+        </td>
+        <td style="background: #AEF1AE">
+          x$2.flatMap[D](((a: A) =&gt; f.apply(a).flatMap[D](((b: B) =&gt; g.apply(b).map[D](((c: C) =&gt; h.apply(c)))))))
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          1450
+          -
+          1492
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.flatMap
+        </td>
+        <td style="background: #AEF1AE">
+          f.apply(a).flatMap[D](((b: B) =&gt; g.apply(b).map[D](((c: C) =&gt; h.apply(c)))))
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          1466
+          -
+          1492
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.map
+        </td>
+        <td style="background: #AEF1AE">
+          g.apply(b).map[D](((c: C) =&gt; h.apply(c)))
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          1488
+          -
+          1492
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function1.apply
+        </td>
+        <td style="background: #AEF1AE">
+          h.apply(c)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

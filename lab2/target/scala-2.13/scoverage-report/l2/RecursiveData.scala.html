@@ -1,0 +1,183 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          l2\RecursiveData.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package l2
+</span>2 <span style=''>
+</span>3 <span style=''>sealed trait List[A]
+</span>4 <span style=''>case class Cons[A](head: A, tail: List[A]) extends List[A]
+</span>5 <span style=''>case class Nil[A]() extends List[A]
+</span>6 <span style=''>
+</span>7 <span style=''>/** Напишите свои решения в виде функций. */
+</span>8 <span style=''>object RecursiveData {
+</span>9 <span style=''>
+</span>10 <span style=''>  // a) Реализуйте функцию, определяющую является ли пустым `List[Int]`.
+</span>11 <span style=''>  def isEmpty(list: List[Int]): Boolean = list match {
+</span>12 <span style=''>    case Cons(_,_) =&gt; </span><span style='background: #AEF1AE'>false</span><span style=''>
+</span>13 <span style=''>    case Nil() =&gt; </span><span style='background: #AEF1AE'>true</span><span style=''>
+</span>14 <span style=''>  }
+</span>15 <span style=''>  // используйте функцию из пункта (a) здесь, не изменяйте сигнатуру
+</span>16 <span style=''>  def testListIntEmpty(list: List[Int]): Boolean = </span><span style='background: #AEF1AE'>isEmpty(list)</span><span style=''>
+</span>17 <span style=''>
+</span>18 <span style=''>  // b) Реализуйте функцию, которая получает head `List[Int]`или возвращает -1 в случае если он пустой.
+</span>19 <span style=''>  def intHead(list: List[Int]): Int = list match {
+</span>20 <span style=''>    case Cons(head, _) =&gt; head
+</span>21 <span style=''>    case Nil() =&gt; </span><span style='background: #AEF1AE'>-1</span><span style=''>
+</span>22 <span style=''>  }
+</span>23 <span style=''>
+</span>24 <span style=''>  // используйте функцию из пункта (b) здесь, не изменяйте сигнатуру
+</span>25 <span style=''>  def testListIntHead(list: List[Int]): Int = </span><span style='background: #AEF1AE'>intHead(list)</span><span style=''>
+</span>26 <span style=''>
+</span>27 <span style=''>  // c) Можно ли изменить `List[A]` так чтобы гарантировать что он не является пустым?
+</span>28 <span style=''>  // Ответ: можно,наверное поставить head в Nil
+</span>29 <span style=''>
+</span>30 <span style=''>  /* d) Реализуйте универсальное дерево (Tree) которое хранит значения в виде листьев и состоит из:
+</span>31 <span style=''>   *      node - левое и правое дерево (Tree)
+</span>32 <span style=''>   *      leaf - переменная типа A
+</span>33 <span style=''>   */
+</span>34 <span style=''>  sealed trait Tree[A]
+</span>35 <span style=''>  case class Node[A](leaf: A, left: Tree[A], right: Tree[A]) extends Tree[A]
+</span>36 <span style=''>  case class Empty[A]() extends Tree[A]
+</span>37 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          348
+          -
+          353
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          false
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          372
+          -
+          376
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          true
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          501
+          -
+          514
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          l2.RecursiveData.isEmpty
+        </td>
+        <td style="background: #AEF1AE">
+          RecursiveData.this.isEmpty(list)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          720
+          -
+          722
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          -1
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          843
+          -
+          856
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          l2.RecursiveData.intHead
+        </td>
+        <td style="background: #AEF1AE">
+          RecursiveData.this.intHead(list)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>
